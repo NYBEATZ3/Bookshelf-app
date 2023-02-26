@@ -1,0 +1,86 @@
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  
+  section {
+    display: block;
+    color: white;
+  }
+
+  nav {
+    width: 100%;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    display: inline;
+  }
+  
+  nav a {
+    color: #f8f3f3;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  section {
+    display: block;
+    color: white;
+  }
+  
+section > img {
+height: 220px;  
+}
+  
+section:nth-of-type(odd) > img {
+float: left;
+margin: 0 24px 24px 0;
+}
+  
+  
+section:nth-of-type(even) > img {
+float: right;
+margin: 0 24px 24px 24;
+}
+  
+
+  
+li {
+    list-style-type: none; /* remove the default bullet points */
+    margin: 10px 0; 
+    padding-left: 20px; 
+    position: relative; /* make the element relative */
+    color: white;
+  }
+  
+li:before {
+    content: "\1F315"; /* clear the default content */
+    background-repeat: no-repeat; /* don't repeat the image */
+    width: 20px; /* set the width of the image */
+    height: 20px; /* set the height of the image */
+    position: absolute; /* make the element absolute */
+    left: 0; /* position the image to the left of the li */
+    top: 0; /* align the image to the top of the li */
+  }
+  
+@media screen and (max-width: 1100px) {
+    body {
+      background-color: rgb(177, 177, 224);
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: rgb(236, 236, 182);
+    }
+  }
